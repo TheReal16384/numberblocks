@@ -17,7 +17,7 @@ drake.on('drop', function(el, target, source, sibling){
   let total = increaseTotal(amount);
   target.innerHTML = '';
   if(total >= 0){
-    if(total <= 20){
+    if(total <= 100){
       el.id = 'nb' + total;
       el.src = 'images/nb' + total + '.png';
     }else{
@@ -36,7 +36,7 @@ drake.on('drop', function(el, target, source, sibling){
   
 });
 
-function increaseTotal(amount){
+function increaseTotoal(amount){
     let totalElem = document.getElementById('total')
     let total = Number(totalElem.innerText);
     total += amount;
