@@ -36,7 +36,7 @@ drake.on('drop', function(el, target, source, sibling){
   
 });
 
-function increaseTotoal(amount){
+function increaseTotal(amount){
     let totalElem = document.getElementById('total')
     let total = Number(totalElem.innerText);
     total += amount;
